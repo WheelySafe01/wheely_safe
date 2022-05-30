@@ -164,7 +164,7 @@
                         lon: 0.0,
                     }
                 },
-                signedIn: false,
+                signedIn: true,
                 email: "none",
                 photoURL: "pi.jpg",
                 displayName: "Raspberry Pi",
@@ -174,20 +174,20 @@
                 this.setupColorListener();
                 this.setupSensorListener();
 
-                auth.onAuthStateChanged(user => {
-                    if (user){
-                        this.signedIn = true;
-                        this.email = user.email;
-                        this.photoURL = user.photoURL;
-                        this.displayName = user.displayName;
-                    }
-                    else{
-                        this.signedIn = false;
-                        this.email = "none";
-                        this.photoURL = "pi.jpg";
-                        this.displayName = "Raspberry Pi";
-                    }
-                });
+                // auth.onAuthStateChanged(user => {
+                //     if (user){
+                //         this.signedIn = true;
+                //         this.email = user.email;
+                //         this.photoURL = user.photoURL;
+                //         this.displayName = user.displayName;
+                //     }
+                //     else{
+                this.signedIn = true;
+                this.email = "defaultuser@email.com";
+                this.photoURL = "pi.jpg";
+                this.displayName = "Raspberry Pi";
+                //     }
+                // });
             },
             mounted: function() {
                 // var ctx = document.getElementById('temperatureChart').getContext('2d');
