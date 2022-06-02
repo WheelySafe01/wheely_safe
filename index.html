@@ -46,16 +46,6 @@
     
                 <div class="container">
                     <div class="row mb-4">
-                        <div class="col-4">
-                            <div class="card h-100 w-100 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hello, {{displayName}}!</h5>
-                                    <img v-bind:src="photoURL" class="card-img-top" >
-                                    <p class="card-text">{{email}}</p>
-                                    <a class="btn btn-primary" v-on:click="signOut()">Sign Out</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-8">
                             <div class="card h-100 w-100 shadow-sm">
                                 <div class="card-body">
@@ -166,7 +156,7 @@
                 signedIn: true,
                 email: "none",
                 photoURL: "pi.jpg",
-                displayName: "Raspberry Pi",
+                displayName: "Wheely-Safe01",
                 // temperatureChart
             },
             created: function() {
