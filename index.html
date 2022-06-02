@@ -77,10 +77,17 @@
                         <div class="col-8">
                             <div class="card h-100 w-100 shadow-sm">
                                 <div class="card-body">
-                                    <h5 class="card-title">Device: Tinypico</h5>
-                                    <img src="tinypico_pinout.jpg" class="card-img-top" alt="pic.jpg">  
-                                    <p class="card-text">The Tinypico is based!</p>
-                                    <a href="https://www.tinypico.com/" class="btn btn-outline-primary">Learn More</a>
+                                    <h5 class="card-title">GPS Coordinates</h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <p>Latitude: </p> 
+                                            <p style="font-size: 3em;">{{sensor.gps.lat}}</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p>Longitude: </p> 
+                                            <p style="font-size: 3em;">{{sensor.gps.lon}}</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>  
